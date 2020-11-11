@@ -1,0 +1,190 @@
+body {
+ 
+   background: linear-gradient(to right, #1F2833, #474747);}
+
+.theatre {
+  display: flex;
+  position: absolute;
+  top:22%;
+  left:10%;
+   }
+
+.cinema-seats {
+  display: flex; }
+  .cinema-seats .seat {
+    cursor: pointer; }
+    .cinema-seats .seat:hover:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 7px; }
+    .cinema-seats .seat.active:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 7px; }
+    
+
+.left .cinema-row {
+  transform: skew(-10deg);
+  margin: 0 6px; }
+.left .seat {
+  width: 35px;
+  height: 50px;
+  border-radius: 7px;
+  background: linear-gradient(to top, #761818, #761818, #761818, #761818, #761818, #B54041, #F3686A);
+  margin-bottom: 10px;
+  transform: skew(10deg);
+  margin-top: -32px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+.left .chosen{
+        width: 35px;
+        height: 50px;
+        border-radius: 7px;
+        background: linear-gradient(to top, #f6d2d2, #f6d2d2, #f6d2d2, #f6d2d2, #f9e2e2, #f9e2e2, #fcf3f3);
+        margin-bottom: 10px;
+        transform: skew(10deg);
+        margin-top: -32px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+    }
+.left .row-2 {
+  transform: skew(-9deg); }
+  .left .row-2 .seat {
+    transform: skew(9deg); }
+  .left .row-2 .chosen {
+    transform: skew(9deg); }
+.left .row-3 {
+  transform: skew(-8deg); }
+  .left .row-3 .seat {
+    transform: skew(8deg); }
+  .left .row-3 .chosen {
+    transform: skew(8deg); }
+.left .row-4 {
+  transform: skew(-7deg); }
+  .left .row-4 .seat {
+    transform: skew(7deg); }
+  .left .row-4 .chosen {
+    transform: skew(7deg); }
+.left .row-5 {
+  transform: skew(-6deg); }
+  .left .row-5 .seat {
+    transform: skew(6deg); }
+  .left .row-5 .chosen {
+    transform: skew(6deg); }
+.left .row-6 {
+  transform: skew(-5deg); }
+  .left .row-6 .seat {
+    transform: skew(5deg); }
+  .left .row-6 .chosen {
+    transform: skew(5deg); }
+.left .row-7 {
+  transform: skew(-4deg); }
+  .left .row-7 .seat {
+    transform: skew(4deg); }
+  .left .row-7 .chosen {
+    transform: skew(4deg); }
+.left .row-8 {
+  transform: skew(-3deg); }
+  .left .row-8 .seat {
+    transform: skew(3deg); }
+  .left .row-8 .chosen {
+    transform: skew(3deg); }
+.left .row-9 {
+  transform: skew(-2deg); }
+  .left .row-9 .seat {
+    transform: skew(2deg); }
+  .left .row-9 .chosen {
+    transform: skew(2deg); }    
+.left .row-10 {
+  transform: skew(-1deg); }
+  .left .row-10 .seat {
+    transform: skew(1deg); }
+  .left .row-10 .chosen {
+    transform: skew(1deg); }
+
+.right {
+  margin-left: 70px; }
+  .right .cinema-row {
+    transform: skew(1deg);
+    margin: 0 6px; }
+  .right .seat {
+    width: 35px;
+    height: 50px;
+    border-radius: 7px;
+    background: linear-gradient(to top, #761818, #761818, #761818, #761818, #761818, #B54041, #F3686A);
+    margin-bottom: 10px;
+    transform: skew(-1deg);
+    margin-top: -32px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+  .right .chosen{
+        width: 35px;
+        height: 50px;
+        border-radius: 7px;
+        background: linear-gradient(to top, #f6d2d2, #f6d2d2, #f6d2d2, #f6d2d2, #f9e2e2, #f9e2e2, #fcf3f3);
+        margin-bottom: 10px;
+        transform: skew(-1deg);
+        margin-top: -32px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+    } 
+  .right .row-2 {
+    transform: skew(2deg); }
+    .right .row-2 .seat {
+      transform: skew(-2deg); }
+    .right .row-2 .chosen {
+      transform: skew(-2deg); }
+  .right .row-3 {
+    transform: skew(3deg); }
+    .right .row-3 .seat {
+      transform: skew(-3deg); }
+    .right .row-3 .chosen {
+      transform: skew(-3deg); }
+  .right .row-4 {
+    transform: skew(4deg); }
+    .right .row-4 .seat {
+      transform: skew(-4deg); }
+    .right .row-4 .chosen {
+      transform: skew(-4deg); }
+  .right .row-5 {
+    transform: skew(5deg); }
+    .right .row-5 .seat {
+      transform: skew(-5deg); }
+    .right .row-5 .chosen {
+      transform: skew(-5deg); }
+  .right .row-6 {
+    transform: skew(6deg); }
+    .right .row-6 .seat {
+      transform: skew(-6deg); }
+    .right .row-6 .chosen {
+      transform: skew(-6deg); }
+  .right .row-7 {
+    transform: skew(7deg); }
+    .right .row-7 .seat {
+      transform: skew(-7deg); }
+    .right .row-7 .chosen {
+      transform: skew(-7deg); }
+    .right .row-8 {
+  transform: skew(8deg); }
+  .right .row-8 .seat {
+    transform: skew(-8deg); }
+  .right .row-8 .chosen {
+    transform: skew(-8deg); }
+.right .row-9 {
+  transform: skew(9deg); }
+  .right .row-9 .seat {
+    transform: skew(-9deg); } 
+  .right .row-9 .chosen {
+    transform: skew(-9deg); } 
+.right .row-10 {
+  transform: skew(10deg); }
+  .right .row-10 .seat {
+    transform: skew(-10deg); }
+  .right .row-10 .chosen {
+    transform: skew(-10deg); }
+
+  
